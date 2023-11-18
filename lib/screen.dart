@@ -53,7 +53,11 @@ Widget build(BuildContext context) {
               ),),
     Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
-      child: Icon(Icons.search),
+      const Tooltip(
+              message: "Search a Item",
+              child: Icon(
+                Icons.search,
+              ),),
     ),
    PopupMenuButton(
           // add icon, by default "3 dot" icon
