@@ -46,7 +46,11 @@ Widget build(BuildContext context) {
 	appBar: AppBar(
 		title: Text("Flutter Simple Apis",style:TextStyle(fontFamily: 'Pacifico',package:'Pacifico-Regular.ttf')),
 		actions: [
-    Icon(Icons.favorite),
+    const Tooltip(
+              message: "add to favorite",
+              child: Icon(
+                Icons.favorite,
+              ),),
     Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Icon(Icons.search),
